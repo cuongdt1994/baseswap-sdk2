@@ -1,0 +1,45 @@
+{
+  "name": "@tuanbombt/baseswap-sdk2",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "3.10.24",
+  "description": "⚒️ An SDK for building applications on top of Baseswap V3",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/cuongdt1994/baseswap-sdk2.git",
+  "keywords": [
+    "baseswap",
+    "ethereum"
+  ],
+  "module": "dist/v3-sdk.esm.js",
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@baseswapfi/sdk-core": "^1.0.43",
+    "@ethersproject/abi": "^5.0.12",
+    "@ethersproject/solidity": "^5.0.9",
+    "jsbi": "^3.1.4",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3"
+  },
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  }
+}
